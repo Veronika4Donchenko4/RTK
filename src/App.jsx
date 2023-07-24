@@ -1,21 +1,23 @@
-
+import RecipeItem from "./recipe-item/RecipeItem";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RecipeItem recipe ={{
+        id: 1,
+        name: 'Pizza',
+      }}
+      />
+      <RecipeItem recipe ={{
+        id: 2,
+        name: 'Pasta',
+      }}
+      />
+      <RecipeItem recipe ={{
+        id: 3,
+        name: 'Carry',
+      }}
+      />
     </div>
   );
 }
