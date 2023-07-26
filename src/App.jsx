@@ -1,7 +1,12 @@
 import RecipeItem from "./recipe-item/RecipeItem";
+import {BsFillBagHeartFill} from 'react-icons/bs'
 
 function App() {
   return (
+    <section>
+      <header>
+      <BsFillBagHeartFill/>
+      </header>
     <div>
       <RecipeItem recipe ={{
         id: 1,
@@ -19,7 +24,10 @@ function App() {
       }}
       />
     </div>
+    </section>
   );
 }
 
 export default App;
+
+
