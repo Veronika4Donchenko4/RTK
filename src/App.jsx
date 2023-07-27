@@ -1,12 +1,10 @@
 import RecipeItem from "./recipe-item/RecipeItem";
-import {BsFillBagHeartFill} from 'react-icons/bs'
+import Header from "./header/Header"
 
 function App() {
   return (
     <section>
-      <header>
-      <BsFillBagHeartFill/>
-      </header>
+      <Header />
     <div>
       <RecipeItem recipe ={{
         id: 1,
