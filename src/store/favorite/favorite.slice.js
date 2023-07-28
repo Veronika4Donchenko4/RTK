@@ -9,7 +9,6 @@ export const favoritesSlice = createSlice({
     reducers: {
         toggleFavorites: (state, {payload: recipe}) => {
             const isExists = state.some(r => r.id === recipe.id)
-            
             if(isExists){
                 const index = state.findIndex(item => item.id
                  === recipe.id)
