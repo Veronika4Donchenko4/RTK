@@ -6,7 +6,7 @@ const initialState = [];
 export const favoritesSlice = createSlice({
     name: 'favorites',
     initialState,
-    redusers: {
+    reducers: {
         toggleFavorites: (state, {payload: recipe}) => {
             const isExists = state.some(r => r.id === recipe.id)
             

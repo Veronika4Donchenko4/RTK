@@ -20,7 +20,7 @@ const RecipeItem = ( {recipe} ) => {
             dispatch(actions.
                 toggleFavorites(recipe))}>
                 {isExists ? 'Remove from' : 'Add to'} favorites
-            Add to favorites</button>
+              </button>
     </div>
   )
 }
