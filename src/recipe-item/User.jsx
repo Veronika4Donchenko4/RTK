@@ -1,4 +1,5 @@
 import React from 'react'
+import { api } from '../store/api/api'
 import { useSelector } from 'react-redux'
 import { useActions } from '../hooks/useActions'
 
@@ -7,7 +8,6 @@ const User = () => {
 
 
     const {getUserById} = useActions()
-    
 
 
   return (

@@ -14,6 +14,7 @@ const RecipeItem = ( {recipe} ) => {
 
   return (
     <div className={ styles.item }>
+      <img src={recipe.image} alt={recipe.name} width={200} />
         <h2>{recipe.name}</h2>
         <button onClick = {() =>
                 toggleFavorites(recipe)}>
