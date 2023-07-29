@@ -1,4 +1,4 @@
-import { api} from "./api";
+import { api } from "./api";
 
 export const recipeApi = api.injectEndpoints({
 endpoints: builder => ({
@@ -8,7 +8,12 @@ endpoints: builder => ({
             url: '/',
             method: 'POST',
          }),
+         invalidatesTags: () => [{
+            type: 'Recipe', 
+         }]
       })
     })
 })
 
+
+export const {useCreateRecipeMutation} = recipeApi
