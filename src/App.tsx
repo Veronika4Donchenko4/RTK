@@ -3,9 +3,11 @@ import Header from "./header/Header"
 import { useGetRecipesQuery } from "./store/api/api";
 import CreateRecipe from "./components/CreateRecipe";
 
+
+
 function App() {
    const { isLoading, data } =
-    useGetRecipesQuery()
+    useGetRecipesQuery(null)
 
 
   return (
